@@ -1,0 +1,138 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Voupool",
+		"_postman_id": "4117cf8e-0e27-5a69-34e3-bf6effee2801",
+		"description": "A voucher pool is a collection of (voucher) codes that can be used by customers (recipients) to get discounts in a web shop.\r\nEach code ​ ​may​ ​only​ ​be ​ ​used once and ​ ​we ​ ​would ​ ​like ​ ​to ​ ​know​ ​when ​ ​it ​ ​was​ ​was​ ​used ​ ​by​ ​the recipient.\r\nSince there can be many recipients in a voucher pool, we need a call that auto-generates voucher​ ​codes for​each recipient",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Special Offers",
+			"description": "",
+			"item": [
+				{
+					"name": "create special offer",
+					"request": {
+						"url": "{{url}}/offers",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"August Ending Promo\",\n\t\"percent_discount\": 60\n}"
+						},
+						"description": "To create a new special offer"
+					},
+					"response": []
+				},
+				{
+					"name": "fetch single special offer",
+					"request": {
+						"url": "{{url}}/offers/RBFOThVpPw",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "To fetch a single special offer"
+					},
+					"response": []
+				},
+				{
+					"name": "list all special offers",
+					"request": {
+						"url": "{{url}}/offers",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "To list all available special offers"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vouchers",
+			"description": "",
+			"item": [
+				{
+					"name": "create a new  voucher",
+					"request": {
+						"url": "{{url}}/vouchers",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"offer_name\": \"August Ending Promo\",\n\t\"recipient_email\": \"ttconfirmed@gmail.com\",\n\t\"expiration_date\": \"30-07-2018\"\n}"
+						},
+						"description": "To create a new voucher"
+					},
+					"response": []
+				},
+				{
+					"name": "list all vouchers",
+					"request": {
+						"url": "{{url}}/vouchers",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "To list all available vouchers"
+					},
+					"response": []
+				},
+				{
+					"name": "fetch single  voucher",
+					"request": {
+						"url": "{{url}}/vouchers/PPNH33W8",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "To fetch single vouchers"
+					},
+					"response": []
+				},
+				{
+					"name": "list all recipient valid vouchers",
+					"request": {
+						"url": "localhost/sites/personal/BUSINESS/test/voupool/src/public/api/v1/vouchers/recipient/ttconfirmed@gmail.com",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "To list all recipient valid voucher codes"
+					},
+					"response": []
+				},
+				{
+					"name": "redeem voucher code",
+					"request": {
+						"url": "{{url}}/vouchers/redeem",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"code\": \"3Z5OKBGW\",\n\t\"email\": \"ttconfirmed@gmail.com\"\n}"
+						},
+						"description": "To allow recipient redeeem voucher code"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

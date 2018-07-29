@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c375aa6d-a1bc-4f41-a2e6-b8225d21d12e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/voupooldb.sql" afterPath="$PROJECT_DIR$/voupooldb.sql" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -237,11 +238,6 @@
               <item name="voupool" type="b2602c69:ProjectViewProjectNode" />
               <item name="voupool" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="voupool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="voupool" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -288,12 +284,12 @@
       <workItem from="1532634103277" duration="924000" />
       <workItem from="1532771875830" duration="496000" />
       <workItem from="1532827217961" duration="604000" />
-      <workItem from="1532829599912" duration="31129000" />
+      <workItem from="1532829599912" duration="32100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99993000" />
+    <option name="totallyTimeSpent" value="100964000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
