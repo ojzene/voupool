@@ -1,0 +1,2 @@
+# voupool
+A ​ ​voucher​ ​pool ​ ​is​ ​a ​ ​collection ​ ​of ​ ​(voucher)​ ​codes​ ​that ​ ​can ​ ​be ​ ​used ​ ​by​ ​customers​ ​(recipients) to ​ ​get ​ ​discounts​ ​in ​ ​a ​ ​web ​ ​shop. Each ​ ​code ​ ​may​ ​only​ ​be ​ ​used ​ ​once ​ ​and ​ ​we ​ ​would ​ ​like ​ ​to ​ ​know​ ​when ​ ​it ​ ​was​ ​was​ ​used ​ ​by​ ​the recipient. Since ​ ​there ​ ​can ​ ​be ​ ​many​ ​recipients​ ​in ​ ​a ​ ​voucher​ ​pool, ​ ​we ​ ​need ​ ​a ​ ​call ​ ​that ​ ​auto-generates voucher​ ​codes​ ​for​ ​each ​ ​recipient
