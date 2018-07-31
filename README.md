@@ -14,6 +14,4 @@ Contains 3 files:
   <li> the database sql file (voupooldb) </li>
 </ul>
 
-If you have any issue, you can reach out via mail: <em> ttconfirmed@gmail.com </em>
-
 Thanks
